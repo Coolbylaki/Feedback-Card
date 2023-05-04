@@ -1,8 +1,21 @@
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
 .star {
 	background-color: var(--medium-grey);
 	padding: 0.75rem;
 	margin-bottom: 1.5rem;
 	border-radius: 50%;
+}
+
+.star:hover {
+	animation: rotation 2s infinite linear;
 }
 
 section {
@@ -27,6 +40,7 @@ section div {
 
 section div:hover {
 	background-color: var(--orange);
+	transition: 100ms linear;
 }
 
 section div:focus {
@@ -37,6 +51,7 @@ section div:focus {
 .submit-button:hover {
 	background-color: white;
 	color: var(--orange);
+	transition: 250ms linear;
 }
 
 .submit-button {
