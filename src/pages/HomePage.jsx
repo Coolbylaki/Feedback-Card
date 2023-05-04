@@ -1,5 +1,11 @@
+import Card from "../components/Card";
+
 const HomePage = () => {
-	return <h1>Feedback page</h1>;
+	return (
+		<>
+			<Card />
+		</>
+	);
 };
 
 export default HomePage;

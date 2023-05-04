@@ -22,6 +22,9 @@ body {
 	height: 100%;
 	font-family: "Overpass", sans-serif;
 	background-color: var(--very-dark-blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 body {
