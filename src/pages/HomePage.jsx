@@ -1,8 +1,17 @@
 import Card from "../components/Card";
 import star from "../assets/images/icon-star.svg";
 import classes from "./HomePage.module.css";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
+	const [rating, setRating] = useState(null);
+
+	const onRatingClickHandler = (e) => {
+		setRating(e.target.textContent);
+		console.log(e.target.textContent);
+	};
+
 	return (
 		<Card>
 			<img src={star} alt="star image" className={classes.star} />
@@ -12,13 +21,21 @@ const HomePage = () => {
 				offering!
 			</p>
 			<section>
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
+				<div onClick={onRatingClickHandler}>1</div>
+				<div onClick={onRatingClickHandler}>2</div>
+				<div onClick={onRatingClickHandler}>3</div>
+				<div onClick={onRatingClickHandler}>4</div>
+				<div onClick={onRatingClickHandler}>5</div>
 			</section>
-			<div className={classes["submit-button"]}>SUBMIT</div>
+			<div className={classes["submit-button"]}>
+				<Link
+					to="/feedback"
+					state={{
+						value: rating,
+					}}>
+					SUBMIT
+				</Link>
+			</div>
 		</Card>
 	);
 };

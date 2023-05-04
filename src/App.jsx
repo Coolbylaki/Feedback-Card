@@ -6,12 +6,10 @@ const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <HomePage />,
-		children: [
-			{
-				path: "feedback",
-				element: <FeedbackPage />,
-			},
-		],
+	},
+	{
+		path: "/feedback",
+		element: <FeedbackPage />,
 	},
 ]);
 

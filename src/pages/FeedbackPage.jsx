@@ -1,5 +1,10 @@
+import { useLocation } from "react-router-dom";
+
 const FeedbackPage = () => {
-	return <h1>Feedback</h1>;
+	const location = useLocation();
+	const { value } = location.state;
+
+	return <h1>{value}</h1>;
 };
 
 export default FeedbackPage;
