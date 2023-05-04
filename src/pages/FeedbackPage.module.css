@@ -1,0 +1,21 @@
+h2 {
+	color: white;
+	margin-bottom: 1rem;
+}
+
+.feedback-p {
+	color: var(--orange);
+}
+
+.p--div {
+	background-color: var(--medium-grey);
+	border-radius: 50px;
+	padding: 0.25rem 0.75rem;
+	margin: 1.5rem 0;
+	font-weight: 400;
+	display: inline-block;
+}
+
+.card-img {
+	margin: 0 auto;
+}

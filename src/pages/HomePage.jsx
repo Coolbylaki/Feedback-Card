@@ -21,21 +21,31 @@ const HomePage = () => {
 				offering!
 			</p>
 			<section>
-				<div onClick={onRatingClickHandler}>1</div>
-				<div onClick={onRatingClickHandler}>2</div>
-				<div onClick={onRatingClickHandler}>3</div>
-				<div onClick={onRatingClickHandler}>4</div>
-				<div onClick={onRatingClickHandler}>5</div>
+				<div onClick={onRatingClickHandler} tabindex="0">
+					1
+				</div>
+				<div onClick={onRatingClickHandler} tabindex="0">
+					2
+				</div>
+				<div onClick={onRatingClickHandler} tabindex="0">
+					3
+				</div>
+				<div onClick={onRatingClickHandler} tabindex="0">
+					4
+				</div>
+				<div onClick={onRatingClickHandler} tabindex="0">
+					5
+				</div>
 			</section>
-			<div className={classes["submit-button"]}>
-				<Link
-					to="/feedback"
-					state={{
-						value: rating,
-					}}>
-					SUBMIT
-				</Link>
-			</div>
+
+			<Link
+				to="/feedback"
+				state={{
+					value: rating,
+				}}
+				className={classes["submit-button"]}>
+				SUBMIT
+			</Link>
 		</Card>
 	);
 };

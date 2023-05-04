@@ -25,6 +25,20 @@ section div {
 	cursor: pointer;
 }
 
+section div:hover {
+	background-color: var(--orange);
+}
+
+section div:focus {
+	background-color: var(--light-grey);
+	color: white;
+}
+
+.submit-button:hover {
+	background-color: white;
+	color: var(--orange);
+}
+
 .submit-button {
 	width: 100%;
 	background-color: var(--orange);
@@ -36,9 +50,6 @@ section div {
 	text-align: center;
 	cursor: pointer;
 	letter-spacing: 2px;
-}
-
-a {
-	color: white;
 	text-decoration: none;
+	display: block;
 }
