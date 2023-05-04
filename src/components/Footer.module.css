@@ -1,0 +1,10 @@
+.footer {
+	font-size: 1.5rem;
+	position: fixed;
+	bottom: 0;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
