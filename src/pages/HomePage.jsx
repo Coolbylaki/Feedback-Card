@@ -17,8 +17,8 @@ const HomePage = () => {
 		<>
 			<Card>
 				<img src={star} alt="star image" className={classes.star} />
-				<h1>How did we do?</h1>
-				<p>
+				<h1 className={classes["align-text"]}>How did we do?</h1>
+				<p className={classes["align-text"]}>
 					Please let us know how we did with your support request. All feedback is appreciated to help us improve our
 					offering!
 				</p>

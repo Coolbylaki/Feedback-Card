@@ -1,7 +1,7 @@
 .star {
 	background-color: var(--medium-grey);
 	padding: 0.75rem;
-	display: inline-block;
+	margin-bottom: 1.5rem;
 	border-radius: 50%;
 }
 
@@ -52,4 +52,8 @@ section div:focus {
 	letter-spacing: 2px;
 	text-decoration: none;
 	display: block;
+}
+
+.align-text {
+	text-align: left;
 }
