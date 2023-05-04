@@ -44,7 +44,7 @@ section div:focus {
 	background-color: var(--orange);
 	color: white;
 	border-radius: 20px;
-	margin-top: 2rem;
+	margin-top: 2.25rem;
 	padding: 0.7rem;
 	font-weight: 700;
 	text-align: center;
